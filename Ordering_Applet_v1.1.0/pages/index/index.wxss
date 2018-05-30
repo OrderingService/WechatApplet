@@ -69,6 +69,11 @@ swiper-item image {
   font-size: 46rpx;
   padding-right: 10rpx;
 }
+.buy_num{
+  float: right;
+  font-size: 32rpx;
+  padding-right: 10rpx;
+}
 .minus-icon{
   float: right;
   font-size: 46rpx;

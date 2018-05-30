@@ -31,6 +31,7 @@
           <view style='margin-top:20rpx;color:#F05A86'>
             ￥ {{items.price}}.00
             <i class="iconfont icon-jiahao2fill plus-icon" data-type="{{index}}" data-index="{{indexs}}" bindtap="addToCart"></i>
+            <i class="buy_num" wx:if="{{isInCart[15*index+indexs]}}">{{items.buy_num}}</i>
             <i class="iconfont icon-jian minus-icon" data-type="{{index}}" data-index="{{indexs}}" bindtap="removeFromCart" wx:if="{{isInCart[15*index+indexs]}}"></i>
           </view>
         </view>
