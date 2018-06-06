@@ -136,8 +136,8 @@
         <Realm className="org.apache.catalina.realm.UserDatabaseRealm" resourceName="UserDatabase"/>
       </Realm>
 
-      <Host appBase="webapps" autoDeploy="true" name="localhost" unpackWARs="true">
-
+      <!-- Host appBase="webapps" autoDeploy="true" name="localhost" unpackWARs="true" -->
+      <Host appBase="webapps" autoDeploy="true" name="172.18.146.154" unpackWARs="true">
         <!-- SingleSignOn valve, share authentication between web applications
              Documentation at: /docs/config/valve.html -->
         <!--

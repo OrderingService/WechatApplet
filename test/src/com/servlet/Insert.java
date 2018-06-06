@@ -45,6 +45,8 @@ public class Insert extends HttpServlet {
 		if (function.equals("createOrder")) {
 			Order order = gson.fromJson(request.getReader(), Order.class);
 			res = DBUtil.createOrder(order);
+			// response.getWriter().append(order.toString());
+			response.getWriter().append(gson.toJson(order));
 		}
 		
 		System.out.println(res);

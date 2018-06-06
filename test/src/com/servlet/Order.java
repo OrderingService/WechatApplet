@@ -1,5 +1,7 @@
 package com.servlet;
 
+import java.util.Date;
+
 public class Order {
 	
 	/**
@@ -17,7 +19,9 @@ public class Order {
 	public String objectId;
 	public String userName;
 	public String price;
-	public String dishArray;	
+	public String dishArray;
+	public String createDate;
+	public String updateDate;
 	
 	/**
 	 * Constructor with Parameters
@@ -25,13 +29,16 @@ public class Order {
 	 * @param objectId
 	 * @param userName
 	 * @param dishArray
+	 * @param createDate
+	 * @param updateDate
 	 */
 	public Order(int orderNum, String objectId, String userName, float price, String dishArray) {
 		this.orderNum = Integer.toString(orderNum);
-		this.objectId = "'" + objectId + "'";
-		this.userName = "'" + userName + "'";
+		this.objectId = objectId;
+		this.userName = userName;
 		this.price = Float.toString(price);
-		this.dishArray = "'" + dishArray + "'";
+		this.dishArray = dishArray;
+		this.createDate = this.updateDate = new Date().toString();
 	}
 	
 }

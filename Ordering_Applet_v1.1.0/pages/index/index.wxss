@@ -73,6 +73,7 @@ swiper-item image {
   float: right;
   font-size: 32rpx;
   padding-right: 10rpx;
+  color: black;
 }
 .minus-icon{
   float: right;
