@@ -38,7 +38,7 @@ Page({
 
     var that = this;
     wx.request({
-      url: 'http://172.18.146.154:8080/test/Insert?func=createOrder',
+      url: 'http://172.18.146.154:8080/OrderingSystem/Insert?func=createOrder',
       // url: 'http://localhost:8080/test/Insert?func=createOrder',
       method: 'POST',
       data: {
