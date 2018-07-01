@@ -42,9 +42,7 @@ Page({
     })
     //后台暂时使用easy-mock的接口，所有数据一次请求完
     wx.request({
-      // url: 'https://easy-mock.com/mock/5af5a51db758743d3788fa65/PML/menu',
-      // url: 'http://localhost:8080/test/Select?func=getMenu',
-      url: 'http://172.18.146.154:8080/OrderingSystem/Select?func=getMenu',
+      url: 'http://172.18.146.154:8888/OrderingSystem/Select?func=getMenu',
       method: 'GET',
       data: {},
       header: {
